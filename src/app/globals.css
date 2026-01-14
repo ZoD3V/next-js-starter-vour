@@ -4,40 +4,86 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --destructive-foreground: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.87 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.704);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
+@theme {
+    /* --- PALET BRAND (TEAL) --- */
+    --color-brand-50: #f0f8ff;
+    --color-brand-100: #e0f0fe;
+    --color-brand-200: #b9e1fe;
+    --color-brand-300: #7cc9fd;
+    --color-brand-400: #36affa;
+    --color-brand-500: #0c95eb;
+    --color-brand-600: #0071c1;
+    --color-brand-700: #015da3;
+    --color-brand-800: #064f86;
+    --color-brand-900: #0b436f;
+    --color-brand-950: #072a4a;
+
+    /* --- PALET SECONDARY (GOLD) --- */
+    --color-secondary-50: #fefde8;
+    --color-secondary-100: #fdfbc4;
+    --color-secondary-200: #fcf48c;
+    --color-secondary-300: #f9e74b;
+    --color-secondary-400: #f5d20e;
+    --color-secondary-500: #e6bc0c;
+    --color-secondary-600: #c69208;
+    --color-secondary-700: #9e680a;
+    --color-secondary-800: #835310;
+    --color-secondary-900: #6f4314;
+    --color-secondary-950: #412307;
+
+    /* --- PALET SLATE (NETRAL) --- */
+    --color-slate-50: #f8fafc;
+    --color-slate-100: #f1f5f9;
+    --color-slate-200: #e2e8f0;
+    --color-slate-300: #cbd5e1;
+    --color-slate-400: #94a3b8;
+    --color-slate-500: #64748b;
+    --color-slate-600: #475569;
+    --color-slate-700: #334155;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
+    --color-slate-950: #020617;
+
+    /* --- SHADCN UI --- */
+    --background: var(--color-slate-50);
+    --foreground: var(--color-slate-950);
+
+    --card: #ffffff;
+    --card-foreground: var(--color-slate-950);
+
+    --popover: #ffffff;
+    --popover-foreground: var(--color-slate-950);
+
+    /* Primary menggunakan Brand 600 (#0071C1) */
+    --primary: var(--color-brand-600);
+    --primary-foreground: #ffffff;
+
+    /* Secondary menggunakan Slate 200 agar netral untuk UI */
+    --secondary: var(--color-slate-200);
+    --secondary-foreground: var(--color-slate-900);
+
+    --muted: var(--color-slate-100);
+    --muted-foreground: var(--color-slate-500);
+
+    --accent: var(--color-brand-100);
+    --accent-foreground: var(--color-brand-900);
+
+    /* Border & Input */
+    --border: var(--color-slate-200);
+    --input: var(--color-slate-200);
+    --ring: var(--color-brand-600);
+
+    /* Sidebar tetap menggunakan Navy dari Slate 950 atau Brand 950 */
+    --sidebar: var(--color-slate-950);
+    --sidebar-foreground: #ffffff;
+    --sidebar-primary: var(--color-brand-500);
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: var(--color-slate-800);
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: var(--color-slate-800);
+    --sidebar-ring: var(--color-brand-600);
+
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.87 0 0);
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
 }
 
 .dark {
